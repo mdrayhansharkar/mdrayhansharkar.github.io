@@ -20,6 +20,7 @@ body {
     top: 0;
     width: 100%;
     background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +95,8 @@ body {
 
 .buttons a:hover {
     background-color: #2ea043;
-    transform: translateY(-3px);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(46, 160, 67, 0.3);
 }
 
 .section {
@@ -133,8 +135,9 @@ body {
 .card:hover,
 .project-card:hover,
 .experience-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
     border-color: #58a6ff;
+    box-shadow: 0 10px 25px rgba(88, 166, 255, 0.15);
 }
 
 .card {
