@@ -181,3 +181,18 @@ body {
         font-size: 17px;
     }
 }
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #58a6ff;
+    margin-bottom: 25px;
+    box-shadow: 0 0 30px rgba(88, 166, 255, 0.35);
+    transition: 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
