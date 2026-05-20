@@ -262,7 +262,11 @@ body {
 .logo {
     color: #58a6ff;
     font-weight: 800;
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
+    font-size: 34px;
+
+    text-shadow:
+        0 0 12px rgba(88,166,255,0.35);
 }
 
 .hero-left,
