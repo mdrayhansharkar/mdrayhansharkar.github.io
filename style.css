@@ -162,16 +162,23 @@ body {
 }
 
 .profile-img {
+
     width: 430px;
     height: 430px;
+
     object-fit: cover;
+
     border-radius: 50%;
-    border: 5px solid #58a6ff;
+
+    border: 6px solid #58a6ff;
+
+    animation: floatImage 6s ease-in-out infinite;
+
     box-shadow:
-        0 0 30px rgba(88, 166, 255, 0.35),
-        0 0 80px rgba(88, 166, 255, 0.15),
-        0 0 120px rgba(88, 166, 255, 0.08);
-    transition: 0.4s;
+        0 0 40px rgba(88,166,255,0.45),
+        0 0 120px rgba(88,166,255,0.18);
+
+    transition: 0.4s ease;
 }
 
 .profile-img:hover {
@@ -613,5 +620,20 @@ body {
 
     100% {
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes floatImage {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
