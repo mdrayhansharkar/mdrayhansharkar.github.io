@@ -351,3 +351,26 @@ body {
             scale(0.95);
     }
 }
+
+.cursor-glow {
+    position: fixed;
+    width: 320px;
+    height: 320px;
+
+    background:
+        radial-gradient(circle,
+        rgba(88,166,255,0.18) 0%,
+        transparent 70%);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+
+    transition:
+        left 0.08s linear,
+        top 0.08s linear;
+}
