@@ -47,15 +47,15 @@ body {
 
 .hero {
     min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
     align-items: center;
     padding: 140px 8% 80px;
     gap: 60px;
 }
 
 .hero-left {
-    flex: 1;
+    max-width: 850px;
 }
 
 .hero-right {
@@ -87,7 +87,7 @@ body {
 .hero-description {
     font-size: 20px;
     color: #8b949e;
-    max-width: 700px;
+    max-width: 760px;
     margin-bottom: 35px;
     line-height: 1.8;
 }
