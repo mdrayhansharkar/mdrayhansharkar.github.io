@@ -273,8 +273,12 @@ body {
 .hero-right,
 .section {
     opacity: 0;
-    transform: translateY(35px);
-    transition: all 0.8s ease;
+    transform: translateY(80px);
+    filter: blur(12px);
+    transition:
+        opacity 1s ease,
+        transform 1s ease,
+        filter 1s ease;
 }
 
 .hero-left.show,
@@ -282,6 +286,7 @@ body {
 .section.show {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0);
 }
 
 .profile-img {
