@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+   font-family: 'Inter', sans-serif;
     background-color: #0d1117;
     color: #ffffff;
     line-height: 1.6;
@@ -48,57 +48,86 @@ body {
 .hero {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    padding: 120px 20px 60px;
+    padding: 140px 8% 80px;
+    gap: 60px;
 }
 
-.hero-content {
-    max-width: 850px;
+.hero-left {
+    flex: 1;
 }
 
-.tag {
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-tag {
     color: #58a6ff;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 64px;
-    margin-bottom: 15px;
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 .hero h2 {
     font-size: 34px;
-    color: #58a6ff;
-    margin-bottom: 20px;
+    color: #c9d1d9;
+    margin-bottom: 25px;
+    line-height: 1.4;
 }
 
-.hero p {
+.hero-description {
     font-size: 20px;
-    color: #c9d1d9;
-    margin-bottom: 30px;
+    color: #8b949e;
+    max-width: 700px;
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+.image-container {
+    position: relative;
+}
+
+.profile-img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #58a6ff;
+    box-shadow:
+        0 0 30px rgba(88, 166, 255, 0.35),
+        0 0 80px rgba(88, 166, 255, 0.15);
+    transition: 0.4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.04);
 }
 
 .buttons a {
     display: inline-block;
     text-decoration: none;
-    background-color: #238636;
-    color: white;
-    padding: 14px 28px;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    border-radius: 12px;
+    font-weight: 600;
     transition: 0.3s;
-    font-weight: bold;
+    background: linear-gradient(135deg, #238636, #2ea043);
+    color: white;
 }
 
 .buttons a:hover {
-    background-color: #2ea043;
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(46, 160, 67, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(46, 160, 67, 0.35);
 }
-
 .section {
     padding: 90px 8%;
     max-width: 1200px;
@@ -162,6 +191,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -182,6 +212,25 @@ body {
 
     .hero p {
         font-size: 17px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 160px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .profile-img {
+        width: 240px;
+        height: 240px;
     }
 }
 
