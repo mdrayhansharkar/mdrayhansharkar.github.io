@@ -258,3 +258,42 @@ body {
         font-size: 14px;
     }
 }
+
+.logo {
+    color: #58a6ff;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.hero-left,
+.hero-right,
+.section {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: all 0.8s ease;
+}
+
+.hero-left.show,
+.hero-right.show,
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.profile-img {
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-14px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
