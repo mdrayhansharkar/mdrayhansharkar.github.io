@@ -804,6 +804,7 @@ body {
 
 #about p {
     max-width: 980px;
-    margin-bottom: 22px;
+    margin-bottom: 26px;
     line-height: 1.9;
+    color: rgba(255,255,255,0.78);
 }
