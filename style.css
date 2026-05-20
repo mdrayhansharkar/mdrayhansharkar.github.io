@@ -306,3 +306,48 @@ body {
         transform: translateY(0);
     }
 }
+
+.bg-blur {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.22;
+    animation: blobMove 18s infinite alternate ease-in-out;
+}
+
+.blur1 {
+    background: #58a6ff;
+    top: -120px;
+    left: -120px;
+}
+
+.blur2 {
+    background: #2ea043;
+    bottom: -150px;
+    right: -120px;
+    animation-delay: 4s;
+}
+
+@keyframes blobMove {
+
+    0% {
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate(40px,-30px)
+            scale(1.12);
+    }
+
+    100% {
+        transform:
+            translate(-30px,40px)
+            scale(0.95);
+    }
+}
