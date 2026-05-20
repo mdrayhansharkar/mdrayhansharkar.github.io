@@ -174,9 +174,38 @@ body {
 }
 
 .section {
-    padding: 140px 8%;
-    max-width: 1200px;
+
+    position: relative;
+
+    padding: 120px 8%;
+
+    max-width: 1400px;
+
     margin: auto;
+}
+
+.section::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 85%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(88,166,255,0.22),
+            transparent
+        );
 }
 
 .section h2 {
